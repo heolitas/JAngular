@@ -4,14 +4,15 @@ import { MaterialFormsModule } from './material-forms/material-forms.module';
 import { WeatherIconComponent } from './weather-icon/weather-icon.component';
 import { DropdownDirective } from './dropdown.directive';
 import { DropdowntoggleDirective } from './dropdowntoggle.directive';
+import { CelsiusPipe } from './pipes/celsius.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialFormsModule
   ],
-  declarations: [WeatherIconComponent, DropdownDirective, DropdowntoggleDirective],
-  exports: [MaterialFormsModule, WeatherIconComponent, DropdownDirective, DropdowntoggleDirective]
+  declarations: [WeatherIconComponent, DropdownDirective, DropdowntoggleDirective, CelsiusPipe],
+  exports: [MaterialFormsModule, WeatherIconComponent, DropdownDirective, DropdowntoggleDirective, CelsiusPipe]
 })
 export class SharedModule { }
 
